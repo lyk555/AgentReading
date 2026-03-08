@@ -1,0 +1,35 @@
+﻿{
+  "FileVersion": 3,
+  "Version": 1,
+  "VersionName": "1.0",
+  "FriendlyName": "AgentReading",
+  "Description": "An embedded Lua Agent for Unreal Engine 5. The plugin scans C++ Lua binding/registration files and associated Markdown API docs to build an offline, searchable knowledge base (RAG). At runtime, users can type natural-language requests and the agent retrieves grounded evidence, generates executable Lua code using only whitelisted APIs, and returns citations plus local verification diagnostics (API existence / optional signature checks). Designed for large function libraries and asset/tool catalogs where correctness and traceability matter.",
+  "Category": "Other",
+  "CreatedBy": "Micro",
+  "CreatedByURL": "",
+  "DocsURL": "",
+  "MarketplaceURL": "",
+  "SupportURL": "",
+  "CanContainContent": true,
+  "IsBetaVersion": true,
+  "IsExperimentalVersion": false,
+  "Installed": false,
+  "Plugins": [
+    {
+      "Name": "NNERuntimeORT",
+      "Enabled": true
+    }
+  ],
+  "Modules": [
+    {
+      "Name": "AgentReading",
+      "Type": "Runtime",
+      "LoadingPhase": "Default"
+    },
+    {
+      "Name": "AgentReadingEditor",
+      "Type": "Editor",
+      "LoadingPhase": "Default"
+    }
+  ]
+}
