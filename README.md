@@ -262,15 +262,3 @@ Key locations in this plugin/project:
 - Document ingestion currently targets Markdown files only
 - Packaged runtime quality depends on the local ONNX model matching the offline embedding pipeline
 
-## Recommended GitHub Notes
-
-If you publish this plugin or project, it is worth stating clearly in your repo:
-
-- which UE version it targets
-- which embedding model was used to generate `DocEmbeddings.jsonl`
-- whether generated files under `Saved/AgentReading/` are committed or must be rebuilt locally
-- what Lua registration macros are expected by `BuildApiRegistry`
-
-## License / Ownership
-
-Add your project license and author information here before publishing if needed.
